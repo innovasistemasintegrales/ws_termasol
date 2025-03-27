@@ -1,11 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termasol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Sol - Termas Solares</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="files/css/styles.css">
 </head>
 <body>
-    
+
+<!-- Barra superior fija -->
+<div class="top-bar py-1 text-white">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6 d-flex justify-content-start align-items-center">
+
+                <div class="me-3 d-flex align-items-center">
+                    <i class="fas fa-phone fs-5 me-1"></i>
+                    <div class="d-flex flex-column lh-1">
+                        <span class="text-uppercase small">LLÁMANOS</span>
+                        <span class="fw-bold small">958 952 136</span>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center">
+                    <i class="fab fa-whatsapp fs-5 me-1"></i>
+                    <div class="d-flex flex-column lh-1">
+                        <span class="text-uppercase small">WHATSAPP</span>
+                        <span class="fw-bold small">958 952 136</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <span class="me-2 small">Síguenos en:</span>
+                <a href="#" class="text-dark me-2 fs-5"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu de navegacion fijo -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand text-logo" href="#">
+            <span class="text-primary">TERMAS</span> <span class="text-warning">SOLARES</span>
+        </a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-primary px-4" href="#inicio">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary px-4" href="#nosotros">QUIENES SOMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary px-4" href="#beneficios">BENEFICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary px-4" href="#contacto">CONTÁCTANOS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Seccion principal -->
+<section id="inicio" class="text-center position-relative">
+    <div class="container-fluid p-0">
+        <img src="files/images/portada.jpg" class="img-fluid w-100">
+
+        <div class="texto-superpuesto">
+            <h1 class="titulo-principal">TERMAS SOLARES</h1>
+            <p class="descripcion">Somos fabricantes y hacemos<br> mantenimiento obligatorio<br> cada 2 años.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion informativa -->
+<section class="fondo-gris py-4 text-center">
+    <div class="container">
+        <h3 class="titulo-azul fw-bold">TERMAS SOLARES NEW SOL ENERGÍA SOLAR COSTO CERO</h3>
+        <p class="texto-amarillo fw-bold">PRODUCTO PERUANO CON PERSONAL PARA LA INSTALACIÓN MÁS ACCESORIOS Y PUESTA EN FUNCIONAMIENTO</p>
+    </div>
+</section>
+
+<!-- Seccion Quienes Somos -->
+<section id="nosotros" class="container-fluid">
+    <div class="row text-white fondo-azul py-5 text-center">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
+            <div class="px-4">
+                <h2 class="fw-bold">TERMAS SOLARES</h2>
+                <p>Somos una empresa que nos dedicamos a la fabricación e instalación de termas solares, por más de 20 años, utilizamos energía renovable para calentar el agua de tu ducha diaria.</p>
+                <p>Al adquirir una terma solar, realizas una inversión que al tercer año te devuelve tu platita.</p>
+                <p>Todos nuestros productos tienen 10 años de garantía, tiempo de vida 15 años y más.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 p-0">
+            <img src="files/images/imagen-central.jpg" alt="Información Termas Solares" class="img-fluid w-100">
+        </div>
+    </div>
+</section>
+
+<section id="beneficios" class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 p-4 shadow-sm border-0">
+                    <h3 class="fw-bold text-center text-danger">Especialistas en fabricación y servicios de mantenimiento de termas solares</h3>
+                    <div class="text-center my-3">
+                        <img src="files/images/imagen01.png" alt="Fabricación y Mantenimiento" class="img-fluid">
+                    </div>
+                    <p class="text-center text-primary">Fabricación, comercialización e instalación de termas solares. Contamos con un equipo técnico de calidad para instalar y darle mantenimiento a tu terma.</p>
+                    <p class="text-center text-primary">Hasta 10 años de garantía, aplicación de ingeniería solar que nos permite ofrecer 15 años de vida y más.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 p-4 shadow-sm border-0">
+                    <h3 class="fw-bold text-center text-danger">Energía solar costo cero</h3>
+                    <div class="text-center my-3">
+                        <img src="files/images/imagen02.png" alt="Energía Solar Costo Cero" class="img-fluid">
+                    </div>
+                    <p class="text-center text-primary">Comprueba el ahorro hoy mismo, al utilizar energía solar.</p>
+                    <p class="text-center text-primary">Protege tu inversión con el mantenimiento obligatorio cada dos años. Al tercer y cuarto año te devuelve tu dinero porque ya no usas ni electricidad ni gas propano.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 p-4 shadow-sm border-0">
+                    <h3 class="fw-bold text-center text-danger">El chorro de agua caliente es relajante y estimulante para el cuerpo</h3>
+                    <div class="text-center my-3">
+                        <img src="files/images/imagen03.png" alt="Chorro de Agua Caliente" class="img-fluid">
+                    </div>
+                    <p class="text-center text-primary">Gracias a la tecnología avanzada y a la capacidad de nuestras termas para almacenar y mantener el calor, puedes disfrutar de agua caliente en cualquier momento.</p>
+                    <p class="text-center text-primary">Con nuestras termas solares de alta eficiencia, tienes agua caliente garantizada las 24 horas, los 7 días de la semana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto y Pie de Página  -->
+<section id="contacto" class="py-5">
+    <div class="container">
+
+        <div class="row text-white">
+
+            <div class="col-md-4">
+                <h2 class="fw-bold text-danger">TERMAS SOLARES</h2>
+                <p class="text-danger"><strong>RUC: 10297154503</strong></p>
+                <p class="text-danger"><strong>ÉXITO CORPORATIVO</strong></p>
+                <p class="text-danger"><i class="fas fa-phone"></i> <strong>Teléfono:</strong> 958 952 136</p>
+                <p class="text-danger">
+                    <i class="fab fa-whatsapp"></i> 
+                    <strong>WhatsApp:</strong> 
+                    <a href="https://wa.me/51958952136" target="_blank" class="text-danger">958 952 136</a>
+                </p>
+                <p class="text-danger">
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <strong>Dirección:</strong> 
+                    <a href="https://maps.app.goo.gl/YQrWphSNeYxrNsidA" target="_blank" class="text-danger">
+                        Calle Huánuco #309, Urb. San Lorenzo Mariano Melgar
+                    </a>
+                </p>
+            </div>
+            
+            <div class="col-md-4 text-center d-flex flex-column align-items-center">
+                <img src="files/images/Sin-título-2.png" alt="Mario Ramos" class="img-fluid rounded-circle" style="max-width: 120px;">
+                <h2 class="fw-bold text-danger mt-3">MARIO RAMOS L.</h2>
+                <p class="text-danger"><strong>ATENCIÓN PERSONALIZADA</strong></p>
+                <p class="text-danger"><strong>CON EL TITULAR</strong></p>
+                <p class="text-danger"><strong>DE LA EMPRESA</strong></p>
+            </div>
+
+
+            <div class="col-md-4 position-relative">
+                <div class="redes-sociales">
+                    <p class="fw-bold text-white mb-1">Redes Sociales</p>
+                    <a href="https://www.facebook.com/Thermasnewsol/" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thermasnewsol/?fbclid=IwY2xjawJSS99leHRuA2FlbQIxMAABHapDP-cWPgEr8z4YaEXwonqUjxFdxy8XTWTR1uRfM3PKNhGLWs_3cfsM-w_aem_tBXhFZ8pXy8m8c54irfiHQ#" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                        <a href="https://twitter.com/" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                </div>
+
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4240906624336!2d-71.51690622508832!3d-16.40327418432568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b38ee702937%3A0x8714caf9b5217cbf!2sCalle%20Huanuco!5e0!3m2!1ses-419!2spe!4v1742790671755!5m2!1ses-419!2spe" 
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="text-danger fw-bold">Diseñado por INNOVA SISTEMAS INTEGRALES S.A.C.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="https://api.whatsapp.com/send/?phone=958952136" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

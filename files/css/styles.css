@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 90px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* BARRA SUPERIOR Y NAVBAR  */
+.top-bar {
+    background-color: #FFC107;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1100;
+    text-align: center;
+    height: 40px; 
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 40px; 
+    z-index: 1090;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+
+/* LOGO NAVBAR  */
+.logo-navbar {
+    height: 40px;
+}
+
+/* SECCION PRINCIPAL  */
+.texto-superpuesto {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    text-align: left;
+    max-width: 45%;
+}
+
+.titulo-principal {
+    font-size: 3.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ff3131;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.9);
+}
+
+.descripcion {
+    text-align: left;
+    color: #f5f5f5;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+img.img-fluid {
+    display: block !important;
+    max-width: 100%;
+    height: auto;
+}
+
+/* SECCIÓN INFORMATIVA */
+.fondo-gris {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+.titulo-azul {
+    color: #0B3C61; 
+}
+
+.texto-amarillo {
+    color: #FFC107; 
+}
+
+/* SECCION QUIÉNES SOMOS  */
+.fondo-azul {
+    background-color: #0b3c61;
+    color: white;
+}
+
+.fondo-azul h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.fondo-azul p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+/* SECCION BENEFICIOS */
+#beneficios {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+#beneficios .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    padding: 20px;
+}
+
+#beneficios .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#beneficios .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #dc3545;
+}
+
+#beneficios .card p {
+    font-size: 1rem;
+    color: #0B4F6C;
+    line-height: 1.5;
+}
+
+#beneficios .card img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SECCION CONTACTO Y PIE DE PAGINA */
+#contacto {
+    background: url('../images/portada-final.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contacto img {
+    border: 3px solid white;
+}
+
+.mapa-container {
+    position: relative;
+    margin-top: 80px; 
+    width: 100%;
+    height: 300px;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.redes-sociales {
+    position: absolute;
+    top: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: #ffcc00;
+}
+
+/* BOTON FLOTANTE WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    z-index: 1500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* AJUSTES RESPONSIVOS */
+@media (max-width: 992px) {
+    .texto-superpuesto {
+        top: 10%;
+        left: 5%;
+        max-width: 50%;
+    }
+    .titulo-principal {
+        font-size: 2.8rem;
+    }
+    .descripcion {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        height: 35px; 
+        font-size: 14px;
+    }
+
+    .navbar {
+        top: 35px;
+        height: 55px; 
+    }
+
+    body {
+        padding-top: 90px; 
+    }
+
+    .texto-superpuesto {
+        top: 8%;
+        left: 5%;
+        max-width: 60%;
+    }
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
+    .descripcion {
+        font-size: 1.1rem;
+    }
+    .mapa-container {
+        height: 250px;
+        margin-top: 90px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-superpuesto {
+        top: 6%;
+        left: 3%;
+        max-width: 70%;
+    }
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+    .descripcion {
+        font-size: 0.9rem;
+    }
+    .mapa-container {
+        height: 200px;
+        margin-top: 100px; 
+    }
+}
+@media (max-width: 992px) {
+
+    .navbar-collapse {
+        background-color: white; 
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .navbar-nav {
+        gap: 10px;
+    }
+    .navbar-nav .nav-link {
+        color: #0B3C61 !important; 
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+    .navbar-nav .nav-link:hover {
+        background-color: #f8f9fa;
+    }
+}
